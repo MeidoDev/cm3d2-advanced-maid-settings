@@ -41,10 +41,10 @@ namespace CM3D2.AddModsSlider.Plugin
     PluginFilter("CM3D2x86"),
     PluginFilter("CM3D2VRx64"),
     PluginName("CM3D2 AddModsSlider"),
-    PluginVersion("0.0.4.5")]
+    PluginVersion("0.0.4.5en")]
     public class AddModsSlider : UnityInjector.PluginBase
     {
-        public const string Version = "0.0.4.5";
+        public const string Version = "0.0.4.5en";
 
         private const int MAX_FREE_COMMENT_LENGTH = 304;
 
@@ -398,7 +398,7 @@ namespace CM3D2.AddModsSlider.Plugin
                 outRect.width = conRect.width;
                 outRect.height  = pv.Line("H1");
                 tStyle.fontSize = pv.Font("H1");
-                mp.bEnabled[key] = GUI.Toggle(outRect, mp.bEnabled[key], mp.sDescription[key]+" ("+key+")", tStyle);
+                mp.bEnabled[key] = GUI.Toggle(outRect, mp.bEnabled[key], mp.sDescription[key], tStyle);
                 outRect.y += outRect.height;
 
                 if (mp.sType[key] == "toggle" || !mp.bEnabled[key]) 
@@ -490,12 +490,12 @@ namespace CM3D2.AddModsSlider.Plugin
             if (n >= AddModsSlider.MAX_FREE_COMMENT_LENGTH)
             {
                 lStyle.normal.textColor = Color.red;
-                GUI.Label(outRect, "コメント欄文字数オーバー", lStyle);
+                GUI.Label(outRect, "Comment too long!", lStyle);
             }
             else
             {
                 lStyle.normal.textColor = Color.white;
-                GUI.Label(outRect, "文字数(max:"+ AddModsSlider.MAX_FREE_COMMENT_LENGTH +") = " + n, lStyle);
+                GUI.Label(outRect, "Chars(max:"+ AddModsSlider.MAX_FREE_COMMENT_LENGTH +") = " + n, lStyle);
             }
         }
 
