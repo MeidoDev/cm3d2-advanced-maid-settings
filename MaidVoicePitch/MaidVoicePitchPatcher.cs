@@ -1,6 +1,7 @@
 ﻿using Mono.Cecil;
 using System;
 using System.Linq;
+using ReiPatcherPlus;
 
 namespace CM3D2.MaidVoicePitch.Patcher
 {
@@ -42,6 +43,7 @@ namespace CM3D2.MaidVoicePitch.Patcher
 
                 // AudioSourceMgr.PlayOneShotの処理終了後にCM3D2.MaidVoicePitch.Managed.Callbacks.AudioSourceMgr.PlayOneShot.Invokeを呼び出す
                 PatcherHelper.SetHook(PatcherHelper.HookType.PostCall, ta, "AudioSourceMgr", "PlayOneShot", da, m + "Callbacks.AudioSourceMgr.PlayOneShot", "Invoke");
+                TypeDefinitionExtensions.GetMethod(args.Assembly.MainModule.GetType("TMorph"), "FixBlendValues").Body.Instructions[92].Operand = (object) -1000000f;
                 SetPatchedAttribute(args.Assembly, patchTag);
             }
             catch (Exception e)
