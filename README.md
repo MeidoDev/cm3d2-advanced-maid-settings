@@ -24,6 +24,7 @@ A patch that allows plugins to save additional data alongside game savefiles.
 **Source:** [Github](https://github.com/neguse11/cm3d2_plugins_okiba/tree/master/MaidVoicePitch)
 
 **Author:** [neguse11](https://github.com/neguse11)
+            [hiremi](http://www.hongfire.com/forum/member.php/199324-hiremi)
 
 This plugin adds many additional configuration options for maids like voice pitch, body part scaling and head tracking adjustments. It can also unlock all the regular sliders to allow further body customization.
 
