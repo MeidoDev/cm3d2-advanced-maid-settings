@@ -612,7 +612,7 @@ namespace CM3D2.MaidVoicePitch.Plugin
                         Vector3 n0 = v0 * sliderScale - v1 * (sliderScale - 1f);
                         Vector3 n1 = v1 * sliderScale - v0 * (sliderScale - 1f);
                         float f = (s + sliderScale - 1f) * (1f / (sliderScale * 2.0f - 1f));
-                        scl = Vector3.Scale(scl, Vector3.Lerp(n0, n1, f));
+                        scl = Vector3.Scale(scl, MaidVoicePitch.UncLerp(n0, n1, f));
                     }
 
                     if ((boneMorphLocal.atr & 1 << (j + 16 & 31)) != 0)
@@ -623,7 +623,7 @@ namespace CM3D2.MaidVoicePitch.Plugin
                         Vector3 n0 = v0 * sliderScale - v1 * (sliderScale - 1f);
                         Vector3 n1 = v1 * sliderScale - v0 * (sliderScale - 1f);
                         float f = (s + sliderScale - 1f) * (1f / (sliderScale * 2.0f - 1f));
-                        pos = Vector3.Scale(pos, Vector3.Lerp(n0, n1, f));
+                        pos = Vector3.Scale(pos, MaidVoicePitch.UncLerp(n0, n1, f));
                     }
                 }
 
@@ -741,6 +741,11 @@ namespace CM3D2.MaidVoicePitch.Plugin
                 linkT.RotateAround(worldCenter, worldAxis, -eyeAngAngle);
             }
         }
+        
+        public static Vector3 UncLerp(Vector3 from, Vector3 to, float t)
+		{
+			return new Vector3(from.x + (to.x - from.x) * t, from.y + (to.y - from.y) * t, from.z + (to.z - from.z) * t);
+		}
 
         // 動作していない古い設定を削除する
         static void CleanupExSave()
