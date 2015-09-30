@@ -19,7 +19,7 @@ A patch that allows plugins to save additional data alongside game savefiles.
 ---
 ### MaidVoicePitch ###
 
-**Version:** 0.2.8.0
+**Version:** 0.2.9.0
 
 **Source:** [Github](https://github.com/neguse11/cm3d2_plugins_okiba/tree/master/MaidVoicePitch)
 
