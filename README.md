@@ -1,4 +1,4 @@
-Advanced Maid Settings (v2.0)
+Advanced Maid Settings (v2.1)
 =============
 
 This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to install it, you will need a correctly set up ReiPatcher and UnityInjector environment.**
