@@ -37,7 +37,7 @@ REM ====== MaidVoicePitch ======
 REM ============================
 
 REM Compile patch
-SET P_LIB=/lib:%RP_DIR% /r:ReiPatcher.exe /r:mono.cecil.dll
+SET P_LIB=/lib:%RP_DIR% /r:ReiPatcher.exe /r:mono.cecil.dll /r:reipatcherplus.dll
 SET P_OUT=/out:%RP_DIR%\Patches\CM3D2.MaidVoicePitch.Patcher.dll
 SET P_SRC=MaidVoicePitch\MaidVoicePitchPatcher.cs Lib\PatcherHelper.cs Lib\Helper.cs
 %COMPILER% /t:library %P_LIB% %P_OUT% %P_SRC%
