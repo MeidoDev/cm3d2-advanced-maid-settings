@@ -1,7 +1,7 @@
 Advanced Maid Settings (v2.1)
 =============
 
-This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to install it, you will need a correctly set up ReiPatcher and UnityInjector environment.**
+This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to install and use it, you will need a correctly set up ReiPatcher and UnityInjector environment, and your CM3D2 version needs to be 1.11 or newer.**
 
 The following mods are included:
 
