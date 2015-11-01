@@ -1,7 +1,7 @@
-Advanced Maid Settings (v2.1)
+Advanced Maid Settings (v2.2)
 =============
 
-This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to install and use it, you will need a correctly set up ReiPatcher and UnityInjector environment, and your CM3D2 version needs to be 1.11 or newer.**
+This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to use it, you will need a correctly set up ReiPatcher and UnityInjector environment. Also, your game version needs to be 1.15 or newer!**
 
 The following mods are included:
 
@@ -19,7 +19,7 @@ A patch that allows plugins to save additional data alongside game savefiles.
 ---
 ### MaidVoicePitch ###
 
-**Version:** 0.2.9.0
+**Version:** 0.2.11.0
 
 **Source:** [Github](https://github.com/neguse11/cm3d2_plugins_okiba/tree/master/MaidVoicePitch)
 
@@ -30,7 +30,7 @@ This plugin adds many additional configuration options for maids like voice pitc
 
 ### AddModsSliders ###
 
-**Version:** 0.1.1.15
+**Version:** 0.1.2.17
 
 **Source:** [Github](https://github.com/CM3D2-01/CM3D2.AddModsSlider.Plugin)
 
@@ -44,9 +44,6 @@ This plugin provides a customizable GUI element which is used to set values for 
 ### Installation
 
 * Download the source archive and extract it into a directory of your liking (but not the ReiPatcher or CM3D2 folder), while keeping the directory structure intact.
-
-
-* If you had already installed a previous version of Advanced Maid Settings, make sure you move away or delete the files `ModsParam.xml` and `MaidVoicePitchSlider.xml`, since the script will not overwrite them with their updated versions otherwise. This is meant so you don't lose any customization in case you had edited those files.
 
 
 * Edit the "Setup" section of `build.bat` so that the paths match your installation. Note: The script assumes that your ReiPatcher patches are stored in a subfolder called `Patches` inside your ReiPatcher folder. If you changed that for some reason, make sure to edit the rest of the file accordingly.
@@ -72,6 +69,7 @@ This plugin provides a customizable GUI element which is used to set values for 
 
 * If you do not want regular sliders having extended value ranges, delete the file `MaidVoicePitchSlider.xml` in the `UnityInjector\Config` folder, or change the values specified in that file accordingly.
 
+
 ### Settings Reference
 
 
@@ -92,16 +90,28 @@ This plugin provides a customizable GUI element which is used to set values for 
 | MABATAKI | Adjusts the relative angle of fully opened eyes (0% ~ 100%) |
 | LIPSYNC_INTENISTY | Reduces the range of mouth/lip movement animations during lip-sync |
 | EYEBALL | Iris / eyeball scaling |
-| EYE_RATIO | Adjusts the width/height aspect ratio of the eye
 | EYE_ANG | Rotates and distorts the eyes |
 | PELSCL | Scales the pelvis region of the body |
-| THISCL | Scales the legs |
 | THIPOS | Adjusts the position of the legs |
+| THISCL | Scales the legs |
+| THISCL2 | Scales the knees |
+| CALFSCL | Scales the calves |
 | SKTSCL | Scales the collision region of skirts |
+| SKTPOS | Adjusts the position of the skirt |
 | SPISCL | Scales the lower abdomen region of the body |
 | S0ASCL | Scales the abdomen region of the body |
 | S1_SCL | Scales the stomach region of the body |
 | S1ASCL | Scales the chest region of the body |
+| S1ABASESCL | Scales the upper torso |
+| MUNESCL | Scales the breasts |
+| MUNEPOS | Adjusts the position of the breasts |
+| MUNESUBSCL | Scales a subsection of the breasts |
+| MUNESUBPOS | Adjusts the position of a subsection of the breasts |
+| NECKSCL | Scales the neck |
+| KATASCL | Scales the shoulders |
+| UPARMSCL | Scales the upper arm |
+| FARMSCL | Scales the forearm |
+| HANDSCL | Scales the hands |
 | HEAD_TRACK | Advanced settings for the EyeToCam / HeadToCam feature, like changing offets, angles and other things |
 
 

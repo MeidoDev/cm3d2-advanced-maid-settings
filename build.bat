@@ -54,10 +54,8 @@ SET P_OUT=/out:%GAME_DIR%\UnityInjector\CM3D2.MaidVoicePitch.Plugin.dll
 SET P_SRC=MaidVoicePitch\MaidVoicePitchPlugin.cs MaidVoicePitch\DebugLineRender.cs MaidVoicePitch\FaceScripteTemplates.cs MaidVoicePitch\FreeComment.cs MaidVoicePitch\KagHooks.cs MaidVoicePitch\SliderTemplates.cs MaidVoicePitch\TBodyMoveHeadAndEyeReplcacement.cs MaidVoicePitch\TemplateFiles.cs Lib\Helper.cs Lib\PluginHelper.cs
 %COMPILER% /t:library %P_LIB% %P_OUT% %P_SRC%
 
-REM Copy config XML if it doesn't exist
-IF NOT EXIST %GAME_DIR%\UnityInjector\Config\MaidVoicePitchSlider.xml (
-    copy MaidVoicePitch\MaidVoicePitchSlider.xml %GAME_DIR%\UnityInjector\Config\
-)
+REM Copy config XML
+copy MaidVoicePitch\MaidVoicePitchSlider.xml %GAME_DIR%\UnityInjector\Config\
 
 REM ==========================
 REM ====== AddModsSlider ======
@@ -69,12 +67,7 @@ SET P_OUT=/out:%GAME_DIR%\UnityInjector\CM3D2.AddModsSlider.Plugin.dll
 SET P_SRC=AddModsSlider\CM3D2.AddModsSlider.Plugin.cs
 %COMPILER% /t:library %P_LIB% %P_OUT% %P_SRC%
 
-REM Copy image resources
-copy AddModsSlider\ModsSliderWin.png %GAME_DIR%\UnityInjector\Config\
-
-REM Copy config XML if it doesn't exist
-IF NOT EXIST %GAME_DIR%\UnityInjector\Config\ModsParam.xml (
-    copy AddModsSlider\ModsParam.xml %GAME_DIR%\UnityInjector\Config\
-)
+REM Copy config XML
+copy AddModsSlider\ModsParam.xml %GAME_DIR%\UnityInjector\Config\
 
 pause;
