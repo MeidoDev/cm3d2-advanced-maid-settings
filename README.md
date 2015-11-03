@@ -1,4 +1,4 @@
-Advanced Maid Settings (v2.2)
+Advanced Maid Settings (v2.3)
 =============
 
 This package is a combination of multiple plugins and patches that enable an advanced customization of your maids beyond of what the game originally offers. **In order to be able to use it, you will need a correctly set up ReiPatcher and UnityInjector environment. Also, your game version needs to be 1.15 or newer!**
@@ -19,7 +19,7 @@ A patch that allows plugins to save additional data alongside game savefiles.
 ---
 ### MaidVoicePitch ###
 
-**Version:** 0.2.11.0
+**Version:** 0.2.12.0
 
 **Source:** [Github](https://github.com/neguse11/cm3d2_plugins_okiba/tree/master/MaidVoicePitch)
 
