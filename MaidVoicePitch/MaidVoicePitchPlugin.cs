@@ -8,7 +8,7 @@ using UnityInjector.Attributes;
 
 namespace CM3D2.MaidVoicePitch.Plugin
 {
-    [PluginName("CM3D2 MaidVoicePitch"), PluginVersion("0.2.11.0")]
+    [PluginName("CM3D2 MaidVoicePitch"), PluginVersion("0.2.12.0")]
     public class MaidVoicePitch : PluginBase
     {
         public static string PluginName { get { return "CM3D2.MaidVoicePitch"; } }
